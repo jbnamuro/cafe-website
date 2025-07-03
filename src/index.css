@@ -1,0 +1,14 @@
+@import "tailwindcss";
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  font-family: "Satoshi-Variable";
+}
+
+@theme {
+  --color-ccgreen: #065a32;
+  --color-cream: #faf2e9;
+}
