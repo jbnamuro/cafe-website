@@ -12,21 +12,29 @@ const Home = () => {
           </span>{" "}
           COFFEE
         </h1>
+        <p className="text-center text-[3vw] md:text-xl font-medium mt-2">
+          Delicious{" "}
+          <span className="inline-flex w-[2vw] md:w-[15px]">
+            <img src="../imgs/coffee.svg" alt="" />
+          </span>{" "}
+          just around the{" "}
+          <span className="text-ccgreen font-extrabold">corner</span>
+        </p>
         <div className="flex justify-center gap-1 mb-5 mt-[10vh]">
           <img
             src="../imgs/homeImg.jpg"
             alt=""
-            className="w-[30vw] h-[45vh]  object-cover "
+            className="w-[30vw] h-[40vh]  object-cover "
           />
           <img
             src="../imgs/homeCoffee.jpg"
             alt=""
-            className="w-[30vw] h-[45vh] object-cover "
+            className="w-[30vw] h-[40vh] object-cover "
           />
           <img
             src="../imgs/homeOutdoor.jpg"
             alt=""
-            className="w-[30vw] h-[45vh] object-cover "
+            className="w-[30vw] h-[40vh] object-cover "
           />
         </div>
       </div>
