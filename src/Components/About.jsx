@@ -7,7 +7,7 @@ const About = () => {
       <div className="text-center font-medium text-[5vw] px-2 mt-5 flex">
         <p>
           At Corner Coffee, we pour our passion into every{" "}
-          <span className="text-ccgreen">
+          <span className="">
             cup{" "}
             <img
               src="../imgs/small-cup.png"
@@ -28,8 +28,8 @@ const About = () => {
               className="w-[7vw] object-contain inline-flex"
             />
           </span>{" "}
-          creating perfect moments with every sip. Find your new favorite with
-          us!
+          creating perfect moments with every sip. Find your new{" "}
+          <span className="text-ccgreen">favorite</span> with us!
         </p>
       </div>
     </div>
