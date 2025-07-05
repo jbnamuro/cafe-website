@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="h-svh relative flex flex-col justify-end items-center">
       <div>
-        <h1 className="tracking-tighter text-center font-extrabold text-[15vh]/[12vh]">
+        <h1 className="tracking-tighter text-center font-extrabold text-[min(15vh,20vw)]/[min(12vh,17vw)]">
           <span className="text-ccgreen">
             CORNER <br />
           </span>{" "}
