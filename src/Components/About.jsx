@@ -4,17 +4,33 @@ const About = () => {
   return (
     <div className="mt-10 font-bold flex flex-col items-center justify-center">
       <p className="py-3 px-8 border w-fit rounded-4xl text-[3vw]">About Us</p>
-      <div className="text-center font-medium text-[3vw] px-2 mt-5 flex">
+      <div className="text-center font-medium text-[5vw] px-2 mt-5 flex">
         <p>
-          At Corner Coffee, we pour our passion into every&nbsp;
+          At Corner Coffee, we pour our passion into every{" "}
           <span className="text-ccgreen">
             cup{" "}
             <img
               src="../imgs/small-cup.png"
               className="w-[7vw] object-contain inline-flex"
             />
-          </span>
-        </p>{" "}
+          </span>{" "}
+          We focus on quality ingredients{" "}
+          <span>
+            <img
+              src="../imgs/small-cup.png"
+              className="w-[7vw] object-contain inline-flex"
+            />
+          </span>{" "}
+          and a welcoming space{" "}
+          <span>
+            <img
+              src="../imgs/small-cup.png"
+              className="w-[7vw] object-contain inline-flex"
+            />
+          </span>{" "}
+          creating perfect moments with every sip. Find your new favorite with
+          us!
+        </p>
       </div>
     </div>
   );

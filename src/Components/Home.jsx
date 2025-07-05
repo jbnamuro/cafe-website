@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="h-svh flex-col justify-center flex relative">
       <div className="relative">
-        <div className="w-[calc(80%)] mx-[10%] relative overflow-hidden aspect-1/1 rounded-4xl bg-[url(../imgs/homeImg.jpg)] bg-contain bg-top bg-fixed">
+        <div className="w-[80%] mx-[10%] max-h-[40vh] relative overflow-hidden aspect-1/1 rounded-4xl bg-[url(../imgs/homeImg.jpg)] bg-cover bg-center bg-fixed">
           <p className="absolute bottom-3 font-medium right-3 bg-cream rounded-4xl px-5 py-2">
             Visit Us
           </p>
@@ -18,14 +18,18 @@ const Home = () => {
           offee
         </h1>
       </div>
-      <div className="font-bold text-[3vw]/[4vw]  mt-2 justify-end flex">
+      <div className="font-bold text-lg  mt-2 justify-end flex">
         <div className="mr-2 w-fit ">
           <div className="flex items-center">
             Delicious&nbsp;
-            <img src="../imgs/coffeeCup.svg" className="w-[3vw]" alt="hi" />
+            <img
+              src="../imgs/coffeeCup.svg"
+              className="w-[18px]"
+              alt="coffee cup"
+            />
             &nbsp;just-
           </div>
-          <p className="ml-[10vw]">
+          <p className="ml-8">
             around the <span className="text-ccgreen">corner</span>
           </p>
         </div>

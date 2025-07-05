@@ -6,6 +6,7 @@ import { ReactLenis } from "lenis/react";
 import { useEffect, useRef } from "react";
 import Header from "./Components/Header";
 import About from "./Components/About";
+import Menu from "./Components/Menu";
 
 const Router = () => {
   const lenisRef = useRef();
@@ -30,6 +31,7 @@ const Router = () => {
                 <Header />
                 <Home />
                 <About />
+                <Menu />
               </>
             }
           />
