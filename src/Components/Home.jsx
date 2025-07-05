@@ -18,7 +18,7 @@ const Home = () => {
             <img src="../imgs/coffee.svg" alt="" />
           </span>{" "}
           just around the{" "}
-          <span className="text-ccgreen font-extrabold">corner</span>
+          <span className="text-ccgreen font-extrabold">corner</span>.
         </p>
         <div className="flex justify-center gap-1 mb-5 mt-[10vh]">
           <img
