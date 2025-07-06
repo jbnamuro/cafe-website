@@ -7,6 +7,7 @@ import { useEffect, useRef } from "react";
 import Header from "./Components/Header";
 import About from "./Components/About";
 import Menu from "./Components/Menu";
+import Footer from "./Components/Footer";
 
 const Router = () => {
   const lenisRef = useRef();
@@ -32,6 +33,7 @@ const Router = () => {
                 <Home />
                 <About />
                 <Menu />
+                <Footer />
               </>
             }
           />
