@@ -1,10 +1,14 @@
 import React from "react";
 
 const MenuItem = (props) => {
-  let file = `../imgs/${props.img}.jpg`;
+  let file = `../imgs/scroller/${props.img}.jpg`;
   return (
-    <div className="w-80 max-w-100 aspect-1/1 overflow-hidden rounded-4xl">
-      <img src={file} alt="w" className="object-cover w-full h-full" />
+    <div className="min-w-80 w-[20%] bg-cream p-2 relative rounded-4xl text-cream max-w-100 aspect-1/1 overflow-hidden">
+      <img
+        src={file}
+        alt="w"
+        className="object-cover w-full h-full rounded-3xl"
+      />
     </div>
   );
 };

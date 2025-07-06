@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <div className="mt-10 font-bold flex flex-col items-center justify-center">
-      <p className="py-3 px-8 border w-fit rounded-4xl border-ccgreen text-[3vw] md:text-3xl/[40px]">
+      <p className="py-3 px-8 border w-fit rounded-4xl font-extrabold border-ccgreen text-[3vw] md:text-3xl/[40px]">
         ABOUT US
       </p>
       <div className="text-center font-medium text-[5vw] md:text-4xl/[50px] px-2 mt-5 flex">

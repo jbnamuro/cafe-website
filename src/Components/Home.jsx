@@ -4,8 +4,8 @@ import { useGSAP } from "@gsap/react";
 
 const Home = () => {
   return (
-    <div className="h-svh relative flex flex-col justify-end items-center">
-      <div>
+    <div className="h-svh relative flex flex-col items-center">
+      <div className="mt-[68px] h-svh mb-[calc(40vh+20px)] flex flex-col justify-center">
         <h1 className="tracking-tighter text-center font-extrabold text-[min(15vh,20vw)]/[min(12vh,17vw)]">
           <span className="text-ccgreen">
             CORNER <br />
@@ -20,23 +20,23 @@ const Home = () => {
           just around the{" "}
           <span className="text-ccgreen font-extrabold">corner</span>.
         </p>
-        <div className="flex justify-center gap-1 mb-5 mt-[10vh]">
-          <img
-            src="../imgs/homeImg.jpg"
-            alt=""
-            className="w-[30vw] h-[40vh]  object-cover "
-          />
-          <img
-            src="../imgs/homeCoffee.jpg"
-            alt=""
-            className="w-[30vw] h-[40vh] object-cover "
-          />
-          <img
-            src="../imgs/homeOutdoor.jpg"
-            alt=""
-            className="w-[30vw] h-[40vh] object-cover "
-          />
-        </div>
+      </div>
+      <div className="flex justify-center gap-1 absolute bottom-5 left-0 w-full">
+        <img
+          src="../imgs/homeImg.jpg"
+          alt=""
+          className="w-[30vw] h-[40vh]  object-cover rounded-4xl "
+        />
+        <img
+          src="../imgs/homeCoffee.jpg"
+          alt=""
+          className="w-[30vw] h-[40vh] object-cover rounded-4xl "
+        />
+        <img
+          src="../imgs/homeOutdoor.jpg"
+          alt=""
+          className="w-[30vw] h-[40vh] object-cover rounded-4xl "
+        />
       </div>
     </div>
   );

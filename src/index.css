@@ -13,3 +13,13 @@ body {
   --color-ccgreen: #065a32;
   --color-cream: #faf2e9;
 }
+
+@keyframes scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.scroller {
+  animation: scroll 30s linear infinite;
+}
