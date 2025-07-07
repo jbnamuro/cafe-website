@@ -6,7 +6,7 @@ const About = () => {
       <p className="py-3 px-8 border w-fit rounded-4xl font-extrabold border-ccgreen text-[3vw] md:text-3xl/[40px]">
         ABOUT US
       </p>
-      <div className="text-center font-medium text-[5vw] md:text-4xl/[50px] px-2 mt-5 flex">
+      <div className="text-center max-w-200 font-medium text-[5vw] md:text-4xl/[50px] px-2 mt-5 flex">
         <p>
           At Corner Coffee, we pour our passion into every{" "}
           <span className="">
@@ -34,6 +34,13 @@ const About = () => {
           <span className="text-ccgreen">favorite</span> with us!
         </p>
       </div>
+      <p className="mt-5">Come Say Hi!</p>
+      <p>
+        <span>img</span> 8am - 2pm Daily
+      </p>
+      <p>
+        <span>img</span> 123 Coffee Street, Canada
+      </p>
     </div>
   );
 };

@@ -7,7 +7,7 @@ const Header = () => {
         <p className="bg-cream text-black py-1 rounded-4xl px-5">Home</p>
         <p className="bg-ccgreen py-1 rounded-4xl px-5">About</p>
         <p className="bg-ccgreen py-1 rounded-4xl px-5">Menu</p>
-        <p className="bg-ccgreen py-1 rounded-4xl px-5">Gallery</p>
+        <p className="bg-ccgreen py-1 rounded-4xl px-5">Contact</p>
       </div>
     </div>
   );

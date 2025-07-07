@@ -5,7 +5,7 @@ import { useGSAP } from "@gsap/react";
 const Home = () => {
   return (
     <div className="h-svh relative flex flex-col items-center">
-      <div className="mt-[68px] h-svh mb-[calc(40vh+20px)] flex flex-col justify-center">
+      <div className="mt-[68px] h-svh mb-[calc(40vh+4px)] flex flex-col justify-center">
         <h1 className="tracking-tighter text-center font-extrabold text-[min(15vh,20vw)]/[min(12vh,17vw)]">
           <span className="text-ccgreen">
             CORNER <br />
@@ -21,21 +21,21 @@ const Home = () => {
           <span className="text-ccgreen font-extrabold">corner</span>.
         </p>
       </div>
-      <div className="flex justify-center gap-1 absolute bottom-5 left-0 w-full">
+      <div className="flex justify-center gap-1 px-1 absolute bottom-1 left-0 w-full">
         <img
           src="../imgs/homeImg.jpg"
           alt=""
-          className="w-[30vw] h-[40vh]  object-cover rounded-4xl "
+          className="w-1/3 h-[40vh]  object-cover rounded-xl"
         />
         <img
           src="../imgs/homeCoffee.jpg"
           alt=""
-          className="w-[30vw] h-[40vh] object-cover rounded-4xl "
+          className="w-1/3 h-[40vh] object-cover rounded-xl object-bottom"
         />
         <img
           src="../imgs/homeOutdoor.jpg"
           alt=""
-          className="w-[30vw] h-[40vh] object-cover rounded-4xl "
+          className="w-1/3 h-[40vh] object-cover rounded-xl object-bottom"
         />
       </div>
     </div>

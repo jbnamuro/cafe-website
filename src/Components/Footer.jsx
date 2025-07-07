@@ -25,7 +25,6 @@ const Footer = () => {
             <p>Home</p>
             <p>About</p>
             <p>Full Menu</p>
-            <p>Contact</p>
           </div>
         </div>
         <div className="mt-20">
