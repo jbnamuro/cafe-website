@@ -12,7 +12,7 @@ const Home = () => {
           </span>{" "}
           COFFEE
         </h1>
-        <p className="text-center text-[3vw] md:text-xl font-medium mt-2">
+        <p className="text-center text-[3vw] md:text-xl font-medium mt-3">
           Delicious{" "}
           <span className="inline-flex w-[2vw] md:w-[15px]">
             <img src="../imgs/coffee.svg" alt="" />
@@ -20,6 +20,11 @@ const Home = () => {
           just around the{" "}
           <span className="text-ccgreen font-extrabold">corner</span>.
         </p>
+        <div className="flex justify-center mt-3">
+          <p className="py-1 px-4 border text-center w-fit rounded-4xl font-bold border-ccgreen text-[3vw] md:text-xl">
+            Visit Us
+          </p>
+        </div>
       </div>
       <div className="flex justify-center gap-1 px-1 absolute bottom-1 left-0 w-full">
         <img
@@ -30,12 +35,12 @@ const Home = () => {
         <img
           src="../imgs/homeCoffee.jpg"
           alt=""
-          className="w-1/3 h-[40vh] object-cover rounded-xl object-bottom"
+          className="w-1/3 h-[40vh] object-cover rounded-xl"
         />
         <img
           src="../imgs/homeOutdoor.jpg"
           alt=""
-          className="w-1/3 h-[40vh] object-cover rounded-xl object-bottom"
+          className="w-1/3 h-[40vh] object-cover rounded-xl"
         />
       </div>
     </div>

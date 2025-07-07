@@ -8,6 +8,8 @@ import Header from "./Components/Header";
 import About from "./Components/About";
 import Menu from "./Components/Menu";
 import Footer from "./Components/Footer";
+import FullMenu from "./Components/FullMenu";
+import Transition from "./Components/Transition";
 
 const Router = () => {
   const lenisRef = useRef();
@@ -29,12 +31,22 @@ const Router = () => {
             index
             element={
               <>
-                <Header />
-                <Home />
-                <About />
-                <Menu />
-                <Footer />
+                <Transition>
+                  <Header />
+                  <Home />
+                  <About />
+                  <Menu />
+                  <Footer />
+                </Transition>
               </>
+            }
+          />
+          <Route
+            path="menu"
+            element={
+              <Transition>
+                <FullMenu />
+              </Transition>
             }
           />
         </Routes>

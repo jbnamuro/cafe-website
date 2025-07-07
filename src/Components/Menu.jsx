@@ -1,6 +1,7 @@
 import React from "react";
 import MenuItem from "./MenuItem";
 import Wave from "react-wavify";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
@@ -24,7 +25,9 @@ const Menu = () => {
           </span>
         </h2>
         <div className="relative mt-10 overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-full cursor-pointer z-100"></div>
+          <Link to="/menu">
+            <div className="absolute top-0 left-0 w-full h-full cursor-pointer z-100"></div>
+          </Link>
           <div className="flex scroller gap-2 w-fit">
             <div className="flex gap-2">
               <MenuItem img="coffeeMenu" />
