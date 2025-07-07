@@ -19,14 +19,14 @@ const About = () => {
           We focus on quality ingredients{" "}
           <span>
             <img
-              src="../imgs/small-cup.png"
+              src="../imgs/small-beans.png"
               className="w-[7vw] md:w-[48px]  object-contain inline-flex"
             />
           </span>{" "}
           and a welcoming space{" "}
           <span>
             <img
-              src="../imgs/small-cup.png"
+              src="../imgs/small-space.png"
               className="w-[7vw] md:w-[48px]  object-contain inline-flex"
             />
           </span>{" "}
