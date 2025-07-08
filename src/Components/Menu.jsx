@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
-    <div className="bg-cream mt-10">
+    <div id="menu" className="bg-cream mt-10">
       <Wave
         fill="#065a32"
         paused={false}
@@ -26,7 +26,7 @@ const Menu = () => {
         </h2>
         <div className="relative mt-10 overflow-hidden">
           <Link to="/menu">
-            <div className="absolute top-0 left-0 w-full h-full cursor-pointer z-100"></div>
+            <div className="absolute top-0 left-0 w-full h-full cursor-pointer z-10"></div>
           </Link>
           <div className="flex scroller gap-2 w-fit">
             <div className="flex gap-2">

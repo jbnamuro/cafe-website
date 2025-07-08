@@ -3,7 +3,7 @@ import Wave from "react-wavify";
 
 const Footer = () => {
   return (
-    <div className="bg-ccgreen">
+    <div id="contact" className="bg-ccgreen">
       <Wave
         fill="#faf2e9"
         paused={false}
@@ -15,7 +15,7 @@ const Footer = () => {
           points: 4,
         }}
       />
-      <div className="bg-cream pb-10 pl-5">
+      <div className="bg-cream pb-10 px-5">
         <h2 className="text-7xl font-bold tracking-tighter mb-20">
           Corner Coffee
         </h2>
@@ -28,7 +28,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-20">
-          <p className="font-bold mb-2 tracking-tighter">FOLLOW US</p>
+          <p className="font-bold mb-2 tracking-tighter">FIND US</p>
           <div className="flex gap-5 font-medium flex-wrap">
             <div className="bg-ccgreen flex gap-2 text-cream px-2 py-2 rounded-md">
               <a href="" target="_blank" className="">

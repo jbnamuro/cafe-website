@@ -4,7 +4,7 @@ import { useGSAP } from "@gsap/react";
 
 const Home = () => {
   return (
-    <div className="h-svh relative flex flex-col items-center">
+    <div id="home" className="h-svh relative flex flex-col items-center">
       <div className="mt-[68px] h-svh mb-[calc(40vh+4px)] flex flex-col justify-center">
         <h1 className="tracking-tighter text-center font-extrabold text-[min(15vh,20vw)]/[min(12vh,17vw)]">
           <span className="text-ccgreen">
@@ -26,22 +26,24 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-center gap-1 px-1 absolute bottom-1 left-0 w-full">
-        <img
-          src="../imgs/homeImg.jpg"
-          alt=""
-          className="w-1/3 h-[40vh]  object-cover rounded-xl"
-        />
-        <img
-          src="../imgs/homeCoffee.jpg"
-          alt=""
-          className="w-1/3 h-[40vh] object-cover rounded-xl"
-        />
-        <img
-          src="../imgs/homeOutdoor.jpg"
-          alt=""
-          className="w-1/3 h-[40vh] object-cover rounded-xl"
-        />
+      <div className=" absolute bottom-1 left-0 flex justify-center w-full">
+        <div className="flex justify-center gap-1 w-[calc(100%-16px)]">
+          <img
+            src="../imgs/homeImg.jpg"
+            alt=""
+            className="w-1/3 h-[40vh]  object-cover rounded-xl"
+          />
+          <img
+            src="../imgs/homeCoffee.jpg"
+            alt=""
+            className="w-1/3 h-[40vh] object-cover rounded-xl"
+          />
+          <img
+            src="../imgs/homeOutdoor.jpg"
+            alt=""
+            className="w-1/3 h-[40vh] object-cover rounded-xl"
+          />
+        </div>
       </div>
     </div>
   );
