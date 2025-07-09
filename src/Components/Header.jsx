@@ -57,7 +57,7 @@ const Header = () => {
         alt="logo of brand"
         className="h-[7vw] top-[50%] -translate-y-[50%] md:h-12 absolute left-[3vw]"
       />
-      <div className="flex items-center bg-ccgreen z-100 text-cream border border-ccgreen rounded-4xl px-2 py-2 relative">
+      <div className="flex items-center bg-ccgreen z-100 text-cream border border-cream rounded-4xl px-2 py-2 relative">
         <div className="flex justify-center relative py-1 w-[14vw] md:w-20">
           <div className="border-cream border-2 header-move psuedo w-full top-0 rounded-4xl left-0 h-full absolute"></div>
           <p

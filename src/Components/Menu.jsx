@@ -1,11 +1,48 @@
-import React from "react";
+import React, { useRef } from "react";
 import MenuItem from "./MenuItem";
 import Wave from "react-wavify";
 import { Link } from "react-router-dom";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { SplitText } from "gsap/SplitText";
+import useFont from "./useFont";
 
 const Menu = () => {
+  const menuRef = useRef(null);
+  const font = useFont();
+  useGSAP(
+    () => {
+      if (!font) return;
+      SplitText.create(".here-to", {
+        type: "words",
+        mask: "words",
+        onSplit: (self) => {
+          gsap.from(self.words, {
+            yPercent: 100,
+            stagger: 0.05,
+            scrollTrigger: {
+              trigger: self.elements,
+              start: "top 85%",
+            },
+          });
+        },
+      });
+      gsap.to(".img-clip3", {
+        delay: 0.5,
+        scale: 1,
+        duration: 1,
+        ease: "elastic.out(0.4,0.4)",
+        scrollTrigger: {
+          trigger: ".here-to",
+          start: "top 85%",
+        },
+      });
+    },
+    { dependencies: [font], scope: menuRef }
+  );
   return (
-    <div id="menu" className="bg-cream mt-10">
+    <div id="menu" ref={menuRef} className="bg-cream mt-10">
       <Wave
         className="translate-y-[1px]"
         fill="#065a32"
@@ -19,12 +56,12 @@ const Menu = () => {
         }}
       />
       <div className="bg-ccgreen pb-10 py-1 ">
-        <h2 className="text-center font-bold text-[4vw] text-white">
-          Here to Serve You Something{" "}
-          <span className="bg-white px-5 py-1 rounded-4xl text-black">
+        <div className="text-center font-bold text-[4vw] flex justify-center items-center text-white here-to gap-2">
+          <p>Here to Serve You Something</p>
+          <p className="bg-white px-5 py-1 rounded-4xl text-black img-clip3">
             Special
-          </span>
-        </h2>
+          </p>
+        </div>
         <div className="relative mt-10 overflow-hidden">
           <Link to="/menu">
             <div className="absolute top-0 left-0 w-full h-full cursor-pointer z-10"></div>
