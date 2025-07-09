@@ -1,11 +1,37 @@
-import React from "react";
+import React, { useRef } from "react";
 import MenuText from "./MenuText";
 import { Link } from "react-router-dom";
 import Wave from "react-wavify";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { SplitText } from "gsap/SplitText";
+import useFont from "./useFont";
 
 const FullMenu = () => {
+  const fullRef = useRef(null);
+  const font = useFont();
+  useGSAP(
+    () => {
+      SplitText.create(".title", {
+        type: "lines",
+        mask: "lines",
+        onSplit: (self) => {
+          gsap.from(self.lines, {
+            yPercent: 100,
+            stagger: {
+              amount: 0.1,
+              // from: "end",
+            },
+            duration: 1,
+            ease: "power2.out",
+          });
+        },
+      });
+    },
+    { dependencies: [font], scope: fullRef }
+  );
   return (
-    <div>
+    <div ref={fullRef}>
       <div className="w-full fixed top-0 left-0 z-100 mt-3 flex justify-between px-[3vw] items-center">
         <Link to="/">
           <p className=" font-bold text-md py-1 px-3 bg-black text-cream w-fit rounded-4xl">
@@ -16,10 +42,10 @@ const FullMenu = () => {
       </div>
       <div className="mt-15 flex flex-col items-center">
         <div className="w-fit flex flex-col items-center mb-8">
-          <h1 className="font-extrabold mt-3 text-[6vw]/[5vw] flex gap-[2vw] items-center">
+          <h1 className="font-extrabold title mt-3 text-[6vw]/[5vw] flex gap-[2vw] items-center">
             CORNER COFFEE <span></span>
           </h1>
-          <h1 className="text-[32vw]/[28vw] font-extrabold text-ccgreen">
+          <h1 className="text-[32vw]/[28vw] title font-extrabold text-ccgreen">
             MENU
           </h1>
           <div className="px-[3.5vw] w-full">
