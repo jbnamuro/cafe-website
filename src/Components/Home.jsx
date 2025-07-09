@@ -50,7 +50,7 @@ const Home = () => {
   return (
     <div ref={homeRef}>
       <div id="home" className="h-svh relative flex flex-col items-center">
-        <div className="mt-[68px] h-svh mb-[calc(40vh+4px)] flex flex-col justify-center">
+        <div className="mt-[68px] h-svh mb-[calc(40svh+4px)] flex flex-col justify-center">
           <div className="tracking-tighter coffee-title opacity-0 text-center font-extrabold text-[min(15vh,20vw)]/[min(12vh,17vw)]">
             <p className="text-ccgreen">CORNER</p>
             <p>COFFEE</p>
@@ -82,17 +82,17 @@ const Home = () => {
             <img
               src="../imgs/homeImg.jpg"
               alt=""
-              className="w-1/3 h-[40vh]  object-cover rounded-xl img-clip"
+              className="w-1/3 h-[40svh]  object-cover rounded-xl img-clip"
             />
             <img
               src="../imgs/homeCoffee.jpg"
               alt=""
-              className="w-1/3 h-[40vh] object-cover rounded-xl img-clip2"
+              className="w-1/3 h-[40svh] object-cover rounded-xl img-clip2"
             />
             <img
               src="../imgs/homeOutdoor.jpg"
               alt=""
-              className="w-1/3 h-[40vh] object-cover rounded-xl img-clip"
+              className="w-1/3 h-[40svh] object-cover rounded-xl img-clip"
             />
           </div>
         </div>
