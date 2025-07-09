@@ -1,7 +1,15 @@
 import React from "react";
 import Wave from "react-wavify";
+import { useLenis } from "lenis/react";
 
 const Footer = () => {
+  const lenis = useLenis();
+  const scrollon = (id, offsetParam) => {
+    lenis.scrollTo(`#${id}`, {
+      duration: 1,
+      offset: offsetParam,
+    });
+  };
   return (
     <div id="contact" className="bg-ccgreen">
       <Wave
@@ -23,9 +31,30 @@ const Footer = () => {
         <div>
           <p className="font-bold text-xl text-ccgreen">Menu</p>
           <div className="font-bold text-4xl">
-            <p>Home</p>
-            <p>About</p>
-            <p>Full Menu</p>
+            <p
+              className="cursor-pointer"
+              onClick={() => {
+                scrollon("home", 0);
+              }}
+            >
+              Home
+            </p>
+            <p
+              className="cursor-pointer"
+              onClick={() => {
+                scrollon("about", -70);
+              }}
+            >
+              About
+            </p>
+            <p
+              className="cursor-pointer"
+              onClick={() => {
+                scrollon("menu", 0);
+              }}
+            >
+              Menu
+            </p>
           </div>
         </div>
         <div className="mt-20">
