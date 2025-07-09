@@ -7,6 +7,7 @@ const Menu = () => {
   return (
     <div id="menu" className="bg-cream mt-10">
       <Wave
+        className="translate-y-[1px]"
         fill="#065a32"
         paused={false}
         style={{ display: "flex" }}
@@ -17,7 +18,7 @@ const Menu = () => {
           points: 4,
         }}
       />
-      <div className="bg-ccgreen pb-10 ">
+      <div className="bg-ccgreen pb-10 py-1 ">
         <h2 className="text-center font-bold text-[4vw] text-white">
           Here to Serve You Something{" "}
           <span className="bg-white px-5 py-1 rounded-4xl text-black">

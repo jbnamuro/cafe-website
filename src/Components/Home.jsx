@@ -1,18 +1,52 @@
 import React from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { useLenis } from "lenis/react";
+import { SplitText } from "gsap/SplitText";
+import useFont from "./useFont";
 
 const Home = () => {
+  const lenis = useLenis();
+  const font = useFont();
+  useGSAP(
+    () => {
+      if (!font) return;
+      SplitText.create(".coffee-title", {
+        type: "lines",
+        mask: "lines",
+        onSplit: (self) => {
+          gsap.set(self.lines, {
+            yPercent: 100,
+          });
+          gsap.set(".coffee-title", {
+            opacity: 1,
+          });
+          gsap.to(self.lines, {
+            yPercent: 0,
+            stagger: 0.2,
+            duration: 1,
+            ease: "power4.out",
+          });
+        },
+      });
+
+      gsap.to([".img-clip", ".img-clip2"], {
+        delay: 0.5,
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        duration: 1,
+        ease: "power3.inOut",
+      });
+    },
+    { dependencies: [font] }
+  );
   return (
     <div id="home" className="h-svh relative flex flex-col items-center">
       <div className="mt-[68px] h-svh mb-[calc(40vh+4px)] flex flex-col justify-center">
-        <h1 className="tracking-tighter text-center font-extrabold text-[min(15vh,20vw)]/[min(12vh,17vw)]">
-          <span className="text-ccgreen">
-            CORNER <br />
-          </span>{" "}
-          COFFEE
-        </h1>
-        <p className="text-center text-[3vw] md:text-xl font-medium mt-3">
+        <div className="tracking-tighter coffee-title opacity-0 text-center font-extrabold text-[min(15vh,20vw)]/[min(12vh,17vw)]">
+          <p className="text-ccgreen">CORNER</p>
+          <p>COFFEE</p>
+        </div>
+        <p className="text-center text-[3vw] coffee-title opacity-0 md:text-xl font-medium mt-3">
           Delicious{" "}
           <span className="inline-flex w-[2vw] md:w-[15px]">
             <img src="../imgs/coffee.svg" alt="" />
@@ -21,7 +55,15 @@ const Home = () => {
           <span className="text-ccgreen font-extrabold">corner</span>.
         </p>
         <div className="flex justify-center mt-3">
-          <p className="py-1 px-4 border text-center w-fit rounded-4xl font-bold border-ccgreen text-[3vw] md:text-xl">
+          <p
+            className="py-1 img-clip px-4 border text-center w-fit rounded-4xl font-bold border-ccgreen text-[3vw] md:text-xl cursor-pointer"
+            onClick={() => {
+              lenis.scrollTo("#about", {
+                duration: 1,
+                offset: -70,
+              });
+            }}
+          >
             Visit Us
           </p>
         </div>
@@ -31,17 +73,17 @@ const Home = () => {
           <img
             src="../imgs/homeImg.jpg"
             alt=""
-            className="w-1/3 h-[40vh]  object-cover rounded-xl"
+            className="w-1/3 h-[40vh]  object-cover rounded-xl img-clip"
           />
           <img
             src="../imgs/homeCoffee.jpg"
             alt=""
-            className="w-1/3 h-[40vh] object-cover rounded-xl"
+            className="w-1/3 h-[40vh] object-cover rounded-xl img-clip2"
           />
           <img
             src="../imgs/homeOutdoor.jpg"
             alt=""
-            className="w-1/3 h-[40vh] object-cover rounded-xl"
+            className="w-1/3 h-[40vh] object-cover rounded-xl img-clip"
           />
         </div>
       </div>

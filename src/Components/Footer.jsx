@@ -5,6 +5,7 @@ const Footer = () => {
   return (
     <div id="contact" className="bg-ccgreen">
       <Wave
+        className="translate-y-[1px]"
         fill="#faf2e9"
         paused={false}
         style={{ display: "flex" }}
@@ -15,7 +16,7 @@ const Footer = () => {
           points: 4,
         }}
       />
-      <div className="bg-cream pb-10 px-5">
+      <div className="bg-cream pb-10 py-[1px] px-5">
         <h2 className="text-7xl font-bold tracking-tighter mb-20">
           Corner Coffee
         </h2>
