@@ -23,6 +23,7 @@ const Transition = ({ children }) => {
         ease: "power1.inOut",
         onComplete: () => {
           changeChild(children);
+          window.scrollTo(0, 0);
         },
       });
       tl.to(".transition-anim", {
