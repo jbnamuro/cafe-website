@@ -69,7 +69,7 @@ const About = () => {
       <p className="py-3 img-clip4 px-8 border w-fit rounded-4xl font-extrabold border-ccgreen text-[3vw] md:text-3xl/[40px]">
         ABOUT US
       </p>
-      <div className="text-center about-split max-w-205 font-medium text-[5vw] md:text-4xl/[50px] px-3 mt-5 flex">
+      <div className="text-center about-split max-w-205 font-medium text-[5vw]/[7vw] md:text-4xl/[50px] px-3 mt-5 flex">
         <p>
           At Corner Coffee, we pour our passion into every{" "}
           <span className="">
