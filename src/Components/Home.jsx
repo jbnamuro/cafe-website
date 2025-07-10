@@ -55,50 +55,52 @@ const Home = () => {
             <p className="border-2 rounded-4xl">Easter</p>
           </div>
         </div>
-        <div className="h-svh flex flex-col justify-center">
-          <div className="tracking-tighter coffee-title opacity-0 text-center font-extrabold text-[min(15vh,20vw)]/[min(12vh,17vw)]">
-            <p className="text-ccgreen">CORNER</p>
-            <p>COFFEE</p>
-          </div>
-          <p className="text-center text-[3vw] coffee-title opacity-0 md:text-xl font-medium mt-3">
-            Delicious{" "}
-            <span className="inline-flex w-[2vw] md:w-[15px]">
-              <img src="../imgs/coffee.svg" alt="" />
-            </span>{" "}
-            just around the{" "}
-            <span className="text-ccgreen font-extrabold">corner</span>.
-          </p>
-          <div className="flex justify-center mt-3">
-            <p
-              className="py-1 img-clip3 px-4 border text-center w-fit rounded-4xl font-bold border-ccgreen text-[3vw] md:text-xl cursor-pointer"
-              onClick={() => {
-                lenis.scrollTo("#about", {
-                  duration: 1,
-                  offset: -70,
-                });
-              }}
-            >
-              Visit Us
+        <div className="h-svh flex flex-col justify-between w-full">
+          <div className=" h-full flex flex-col justify-center">
+            <div className="tracking-tighter coffee-title opacity-0 text-center font-extrabold text-[min(15vh,20vw)]/[min(12vh,17vw)]">
+              <p className="text-ccgreen">CORNER</p>
+              <p>COFFEE</p>
+            </div>
+            <p className="text-center text-[3vw] coffee-title opacity-0 md:text-xl font-medium mt-3">
+              Delicious{" "}
+              <span className="inline-flex w-[2vw] md:w-[15px]">
+                <img src="../imgs/coffee.svg" alt="" />
+              </span>{" "}
+              just around the{" "}
+              <span className="text-ccgreen font-extrabold">corner</span>.
             </p>
+            <div className="flex justify-center mt-3">
+              <p
+                className="py-1 img-clip3 px-4 border text-center w-fit rounded-4xl font-bold border-ccgreen text-[3vw] md:text-xl cursor-pointer"
+                onClick={() => {
+                  lenis.scrollTo("#about", {
+                    duration: 1,
+                    offset: -70,
+                  });
+                }}
+              >
+                Visit Us
+              </p>
+            </div>
           </div>
-        </div>
-        <div className=" flex mb-1 justify-center w-full">
-          <div className="flex justify-center gap-1 w-[calc(100%-16px)]">
-            <img
-              src="../imgs/homeImg.jpg"
-              alt=""
-              className="w-1/3 h-[40svh]  object-cover rounded-xl img-clip"
-            />
-            <img
-              src="../imgs/homeCoffee.jpg"
-              alt=""
-              className="w-1/3 h-[40svh] object-cover rounded-xl img-clip2"
-            />
-            <img
-              src="../imgs/homeOutdoor.jpg"
-              alt=""
-              className="w-1/3 h-[40svh] object-cover rounded-xl img-clip"
-            />
+          <div className="">
+            <div className="flex w-[calc(100%-16px)] mb-1 gap-1 mx-1">
+              <img
+                src="../imgs/homeImg.jpg"
+                alt=""
+                className="w-1/3 h-[40svh]  object-cover rounded-xl img-clip"
+              />
+              <img
+                src="../imgs/homeCoffee.jpg"
+                alt=""
+                className="w-1/3 h-[40svh] object-cover rounded-xl img-clip2"
+              />
+              <img
+                src="../imgs/homeOutdoor.jpg"
+                alt=""
+                className="w-1/3 h-[40svh] object-cover rounded-xl img-clip"
+              />
+            </div>
           </div>
         </div>
       </div>
