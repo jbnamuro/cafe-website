@@ -21,7 +21,7 @@ const Header = () => {
     triggers.forEach((trig) => {
       ScrollTrigger.create({
         trigger: trig.trigger,
-        start: "top 60%",
+        start: "top 50%",
         // markers: true,
         onEnter: () => {
           gsap.fromTo(
