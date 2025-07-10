@@ -50,7 +50,12 @@ const Home = () => {
   return (
     <div ref={homeRef}>
       <div id="home" className="h-svh relative flex flex-col items-center">
-        <div className=" h-svh mb-[calc(40svh+4px)] flex flex-col justify-center">
+        <div className="mt-5 text-[3vw] md:text-base font-medium border rounded-4xl py-2 opacity-0 pointer-events-none">
+          <div className="py-1">
+            <p className="border-2 rounded-4xl">Easter</p>
+          </div>
+        </div>
+        <div className="h-svh mb-[calc(40svh+4px)] flex flex-col justify-center ">
           <div className="tracking-tighter coffee-title opacity-0 text-center font-extrabold text-[min(15vh,20vw)]/[min(12vh,17vw)]">
             <p className="text-ccgreen">CORNER</p>
             <p>COFFEE</p>
