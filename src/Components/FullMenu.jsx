@@ -170,7 +170,7 @@ const FullMenu = () => {
           }}
         />
         <div className="bg-ccgreen text-cream pb-10 py-[1px] px-5">
-          <h2 className="text-7xl font-bold tracking-tighter mb-20">
+          <h2 className="text-[12vw] md:text-7xl  font-bold tracking-tighter mb-20">
             Corner Coffee
           </h2>
           <div>
