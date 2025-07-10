@@ -76,28 +76,28 @@ const About = () => {
             cup{" "}
             <img
               src="../imgs/small-cup.png"
-              className="w-[7vw] img-clip3 md:w-[48px] object-contain inline-flex"
+              className="w-[7vw] img-clip3 md:w-[48px] object-contain inline align-middle"
             />
           </span>{" "}
           We focus on quality ingredients{" "}
           <span>
             <img
               src="../imgs/small-beans.png"
-              className="w-[7vw] md:w-[48px] img-clip3  object-contain inline-flex"
+              className="w-[7vw] md:w-[48px] img-clip3  object-contain inline align-middle"
             />
           </span>{" "}
           and a welcoming space{" "}
           <span>
             <img
               src="../imgs/small-space.png"
-              className="w-[7vw] md:w-[48px] img-clip3  object-contain inline-flex"
+              className="w-[7vw] md:w-[48px] img-clip3  object-contain inline align-middle"
             />
           </span>{" "}
           creating perfect moments with every sip{" "}
           <span>
             <img
               src="../imgs/small-drink.png"
-              className="w-[7vw] md:w-[48px] img-clip3  object-contain inline-flex"
+              className="w-[7vw] md:w-[48px] img-clip3  object-contain inline align-middle"
             />
           </span>{" "}
           Find your new <span className="text-ccgreen">favorite</span> with us!
