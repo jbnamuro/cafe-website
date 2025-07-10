@@ -55,7 +55,7 @@ const Home = () => {
             <p className="border-2 rounded-4xl">Easter</p>
           </div>
         </div>
-        <div className="h-svh flex flex-col justify-between w-full">
+        <div className="h-svh flex flex-col justify-between w-full max-h-svh">
           <div className=" h-full flex flex-col justify-center">
             <div className="tracking-tighter coffee-title opacity-0 text-center font-extrabold text-[min(15vh,20vw)]/[min(12vh,17vw)]">
               <p className="text-ccgreen">CORNER</p>
