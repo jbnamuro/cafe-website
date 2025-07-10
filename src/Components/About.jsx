@@ -46,9 +46,9 @@ const About = () => {
           start: "top 85%",
         },
       });
-      gsap.from(".img-clip3", {
+      gsap.to(".img-clip3", {
         delay: 0.5,
-        scale: 0,
+        scale: 1,
         stagger: 0.1,
         duration: 1,
         ease: "elastic.out(0.4,0.4)",
@@ -109,7 +109,7 @@ const About = () => {
           <span>
             <img src="../imgs/clock.svg" className="w-[3vw] md:w-4 img-clip3" />
           </span>{" "}
-          8am - 2pm Daily
+          8am-2pm Daily
         </p>
         <p className="flex gap-2 items-center justify-center">
           <span>
