@@ -46,9 +46,9 @@ const About = () => {
           start: "top 85%",
         },
       });
-      gsap.to(".img-clip3", {
+      gsap.from(".img-clip3", {
         delay: 0.5,
-        scale: 1,
+        scale: 0,
         stagger: 0.1,
         duration: 1,
         ease: "elastic.out(0.4,0.4)",

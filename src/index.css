@@ -33,9 +33,9 @@ body {
   clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
 }
 
-.img-clip3 {
+/* .img-clip3 {
   transform: scale(0);
-}
+} */
 
 .img-clip4 {
   transform: scale(0);
