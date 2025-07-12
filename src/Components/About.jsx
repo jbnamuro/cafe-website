@@ -108,17 +108,17 @@ const About = () => {
         },
         "-=0.75"
       );
-      gsap.to(".unclip", {
-        // delay: 0.5,
-        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-        duration: 1,
-        ease: "power2.out",
-        stagger: 0.15,
-        scrollTrigger: {
-          trigger: ".unclip",
-          start: "top 85%",
+      tl.to(
+        ".unclip",
+        {
+          // delay: 0.5,
+          clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+          duration: 1,
+          ease: "power2.out",
+          stagger: 0.15,
         },
-      });
+        "<"
+      );
     },
     { scope: aboutRef, dependencies: [font] }
   );
