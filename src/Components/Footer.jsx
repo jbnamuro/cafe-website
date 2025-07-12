@@ -20,7 +20,7 @@ const Footer = () => {
   useGSAP(
     () => {
       if (!font) return;
-      SplitText.create(".corner", {
+      SplitText.create([".corner", ".open"], {
         type: "words",
         mask: "words",
         onSplit: (self) => {
@@ -69,7 +69,7 @@ const Footer = () => {
   return (
     <div ref={footerRef} id="contact" className="bg-ccgreen">
       <Wave
-        className="translate-y-[1px]"
+        className="translate-y-[1px] h-25"
         fill="#faf2e9"
         paused={false}
         style={{ display: "flex" }}
@@ -81,9 +81,17 @@ const Footer = () => {
         }}
       />
       <div className="bg-cream pb-10 py-[1px] px-5">
-        <h2 className="text-[12vw] corner md:text-7xl font-bold tracking-tighter mb-20">
-          Corner Coffee
-        </h2>
+        <div className="mb-20">
+          <h2 className="text-[12vw]/[15vw] corner md:text-7xl font-bold tracking-tighter ">
+            Corner Coffee
+          </h2>
+          <div className="mt-2 text-[4vw] md:text-2xl ml-1 font-medium open">
+            <p>
+              Open <span className="text-ccgreen">Daily</span> 8am-2pm
+            </p>
+            <p>123 Pols Street, Toronto</p>
+          </div>
+        </div>
         <div className="">
           <p className="font-bold text-xl text-ccgreen">Menu</p>
           <div className="font-bold text-4xl">

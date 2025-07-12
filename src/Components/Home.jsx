@@ -71,9 +71,9 @@ const Home = () => {
             </p>
             <div className="flex justify-center mt-3">
               <p
-                className="py-1 img-clip3 px-4 border text-center w-fit rounded-4xl font-bold border-ccgreen text-[3vw] md:text-xl cursor-pointer"
+                className="py-1 img-clip3 px-4 border text-center w-fit rounded-[4vw] font-bold border-ccgreen text-[3vw] md:text-xl cursor-pointer"
                 onClick={() => {
-                  lenis.scrollTo("#about", {
+                  lenis.scrollTo("#contact", {
                     duration: 1,
                     offset: -70,
                   });

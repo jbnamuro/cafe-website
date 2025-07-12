@@ -33,7 +33,11 @@ body {
   clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
 }
 
-.img-clip3 {
+.img-clip3,
+.img1,
+.img2,
+.img3,
+.img4 {
   transform: scale(0);
   transform-origin: center;
 }

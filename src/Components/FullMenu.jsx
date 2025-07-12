@@ -28,7 +28,7 @@ const FullMenu = () => {
           });
         },
       });
-      SplitText.create(".corner", {
+      SplitText.create([".corner", ".open"], {
         type: "words",
         mask: "words",
         onSplit: (self) => {
@@ -213,9 +213,17 @@ const FullMenu = () => {
           }}
         />
         <div className="bg-ccgreen text-cream pb-10 py-[1px] px-5">
-          <h2 className="text-[12vw] md:text-7xl  font-bold tracking-tighter mb-20 corner">
-            Corner Coffee
-          </h2>
+          <div className="mb-20 ">
+            <h2 className="text-[12vw] md:text-7xl  font-bold tracking-tighter corner">
+              Corner Coffee
+            </h2>
+            <div className="mt-2 text-[4vw] md:text-2xl ml-1 font-medium open">
+              <p>
+                Open <span className="">Daily</span> 8am-2pm
+              </p>
+              <p>123 Pols Street, Toronto</p>
+            </div>
+          </div>
           <div className="">
             <p className="font-bold text-xl text-cream">Menu</p>
             <div className="font-bold text-4xl">
