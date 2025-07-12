@@ -56,9 +56,9 @@ const Menu = () => {
         }}
       />
       <div className="bg-ccgreen pb-10 py-1 ">
-        <div className="text-center font-bold text-[4vw] flex justify-center items-center text-white gap-2">
+        <div className="text-center font-bold text-[4.5vw] flex justify-center items-center text-white gap-[2vw]">
           <p className="here-to">Here to Serve You Something</p>
-          <p className="bg-white px-5 py-1 rounded-4xl text-black img-clip3">
+          <p className="bg-white px-[4vw] py-[1vw] rounded-4xl text-black img-clip3">
             Special
           </p>
         </div>

@@ -5,6 +5,7 @@ import Wave from "react-wavify";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/SplitText";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import useFont from "./useFont";
 
 const FullMenu = () => {
@@ -24,6 +25,48 @@ const FullMenu = () => {
             },
             duration: 1,
             ease: "power2.out",
+          });
+        },
+      });
+      SplitText.create(".corner", {
+        type: "words",
+        mask: "words",
+        onSplit: (self) => {
+          gsap.from(self.words, {
+            yPercent: 100,
+            stagger: 0.1,
+            ease: "power3.out",
+            duration: 1,
+            scrollTrigger: {
+              trigger: self.elements,
+            },
+          });
+        },
+      });
+      ScrollTrigger.create({
+        trigger: ".find",
+        onEnter: () => {
+          SplitText.create(".find-us", {
+            type: "words",
+            mask: "words",
+            onSplit: (self) => {
+              gsap.from(self.words, {
+                yPercent: 100,
+                stagger: 0.1,
+                ease: "power3.out",
+                duration: 1,
+              });
+              gsap.to(".img-clip3", {
+                scale: 1,
+                stagger: 0.1,
+                duration: 1,
+                ease: "elastic.out(0.4,0.4)",
+                scrollTrigger: {
+                  trigger: ".here-to",
+                  start: "top 85%",
+                },
+              });
+            },
           });
         },
       });
@@ -170,10 +213,10 @@ const FullMenu = () => {
           }}
         />
         <div className="bg-ccgreen text-cream pb-10 py-[1px] px-5">
-          <h2 className="text-[12vw] md:text-7xl  font-bold tracking-tighter mb-20">
+          <h2 className="text-[12vw] md:text-7xl  font-bold tracking-tighter mb-20 corner">
             Corner Coffee
           </h2>
-          <div>
+          <div className="">
             <p className="font-bold text-xl text-cream">Menu</p>
             <div className="font-bold text-4xl">
               <Link to="/">
@@ -181,28 +224,28 @@ const FullMenu = () => {
               </Link>
             </div>
           </div>
-          <div className="mt-20">
-            <p className="font-bold mb-2 tracking-tighter">FIND US</p>
+          <div className="mt-20 find">
+            <p className="font-bold mb-2 tracking-tighter find-us">FIND US</p>
             <div className="flex gap-5 font-medium flex-wrap">
-              <div className="bg-cream text-black flex gap-2 px-2 py-2 rounded-md">
+              <div className="bg-cream text-black flex gap-2 px-2 py-2 rounded-md img-clip3">
                 <a href="" target="_blank" className="">
                   INSTAGRAM
                 </a>
                 <p>↗</p>
               </div>
-              <div className="bg-cream flex gap-2 text-black px-2 py-2 rounded-md">
+              <div className="bg-cream flex gap-2 text-black px-2 py-2 rounded-md img-clip3">
                 <a href="" target="_blank">
                   FACEBOOK
                 </a>
                 <p>↗</p>
               </div>
-              <div className="bg-cream flex gap-2 text-black px-2 py-2 rounded-md">
+              <div className="bg-cream flex gap-2 text-black px-2 py-2 rounded-md img-clip3">
                 <a href="" target="_blank">
                   EMAIL
                 </a>
                 <p>↗</p>
               </div>
-              <div className="bg-cream flex gap-2 text-black px-2 py-2 rounded-md">
+              <div className="bg-cream flex gap-2 text-black px-2 py-2 rounded-md img-clip3">
                 <a href="" target="_blank">
                   TIKTOK
                 </a>
