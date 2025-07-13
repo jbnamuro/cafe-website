@@ -137,31 +137,25 @@ const About = () => {
           About Us
         </p>
       </div>
-      <section className="text-thing">
-        <div className="flex gap-2 justify-center items-center bg-red-500">
+      <section className="text-thing flex flex-col gap-[1.5vw]">
+        <div className="flex gap-2 justify-center items-center">
           <p className="p1">PREMIUM BEANS</p>
           <img src="/imgs/small-beans.png" className="h-[4vw] img1" />
           <p className="p2">CAREFULLY ROASTED</p>
         </div>
-        <div className="flex gap-2 justify-center h-fit overflow-hidden">
+        <div className="flex gap-2 justify-center items-center">
           <p className="p2">AN UNFORGETTABLE COFFEE</p>
-          <img src="/imgs/small-cup.png" className="h-[4vw] self-center img2" />
+          <img src="/imgs/small-cup.png" className="h-[4vw] img2" />
           <p className="p3">EXPERIENCE</p>
         </div>
-        <div className="flex gap-2 justify-center h-fit overflow-hidden">
+        <div className="flex gap-2 justify-center items-center">
           <p className="p3">ENJOY EACH SIP</p>
-          <img
-            src="/imgs/small-drink.png"
-            className="h-[4vw] self-center img3"
-          />
+          <img src="/imgs/small-drink.png" className="h-[4vw]  img3" />
           <p className="p4">BEST SAVORED</p>
         </div>
-        <div className="flex gap-2 justify-center h-fit overflow-hidden">
+        <div className="flex gap-2 justify-center items-center">
           <p className="p4">IN OUR COZY CAFE</p>
-          <img
-            src="/imgs/small-space.png"
-            className="h-[4vw] self-center img4"
-          />
+          <img src="/imgs/small-space.png" className="h-[4vw] img4" />
         </div>
       </section>
 
