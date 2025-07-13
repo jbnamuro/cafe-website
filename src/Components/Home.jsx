@@ -31,11 +31,12 @@ const Home = () => {
         },
       });
 
-      gsap.to([".img-clip", ".img-clip2"], {
+      gsap.to(".img-clip4", {
         delay: 0.5,
-        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        stagger: 0.1,
+        scale: 1,
         duration: 1,
-        ease: "power3.inOut",
+        ease: "elastic.out(0.2,0.4)",
       });
 
       gsap.to(".img-clip3", {
@@ -88,17 +89,17 @@ const Home = () => {
               <img
                 src="../imgs/homeImg.jpg"
                 alt=""
-                className="w-1/3 h-[40svh]  object-cover rounded-xl img-clip"
+                className="w-1/3 h-[40svh]  object-cover rounded-xl img-clip4"
               />
               <img
                 src="../imgs/homeCoffee.jpg"
                 alt=""
-                className="w-1/3 h-[40svh] object-cover rounded-xl img-clip2"
+                className="w-1/3 h-[40svh] object-cover rounded-xl img-clip4"
               />
               <img
                 src="../imgs/homeOutdoor.jpg"
                 alt=""
-                className="w-1/3 h-[40svh] object-cover rounded-xl img-clip"
+                className="w-1/3 h-[40svh] object-cover rounded-xl img-clip4"
               />
             </div>
           </div>
