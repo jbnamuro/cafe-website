@@ -138,7 +138,7 @@ const About = () => {
         </p>
       </div>
       <section className="text-thing">
-        <div className="flex gap-2 justify-center h-fit overflow-hidden bg-red-500">
+        <div className="flex gap-2 justify-center items-center bg-red-500">
           <p className="p1">PREMIUM BEANS</p>
           <img src="/imgs/small-beans.png" className="h-[4vw] img1" />
           <p className="p2">CAREFULLY ROASTED</p>
