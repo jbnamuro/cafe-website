@@ -39,7 +39,7 @@ body {
 .img3,
 .img4 {
   transform: scale(0);
-  transform-origin: center;
+  /* transform-origin: center; */
 }
 
 .img-clip4 {
