@@ -130,15 +130,15 @@ const About = () => {
       ref={aboutRef}
       id="about"
       // lg:text-[40px]/[54px] md:text-[30px]/[47px] md:h-[32px] lg:h-[42px]
-      className="text-[4vw]/[4vw]   my-15 font-extrabold"
+      className="text-[4vw] my-15 font-extrabold"
     >
       <div className="flex justify-center w-full">
         <p className="text-center mb-10 py-1 px-4 img-clip3 lg:text-[40px]/[54px] md:text-[30px]/[47px] border-ccgreen font-bold border w-fit rounded-[4vw]">
           About Us
         </p>
       </div>
-      <section className="text-thing flex flex-col gap-[1.5vw]">
-        <div className="flex gap-2 justify-center items-center h-[5vw] bg-green-500">
+      <section className="text-thing flex flex-col">
+        <div className="flex gap-2 justify-center items-center bg-red-500">
           <p className="p1">PREMIUM BEANS</p>
           {/* <img src="/imgs/small-beans.png" className="h-[5vw] img1" /> */}
           <p className="p2">CAREFULLY ROASTED</p>
