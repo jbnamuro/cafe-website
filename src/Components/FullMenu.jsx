@@ -13,12 +13,19 @@ const FullMenu = () => {
   const font = useFont();
   useGSAP(
     () => {
+      if (!font) return;
       SplitText.create(".title", {
         type: "lines",
         mask: "lines",
         onSplit: (self) => {
-          gsap.from(self.lines, {
+          gsap.set(self.lines, {
             yPercent: 100,
+          });
+          gsap.set(".title", {
+            opacity: 100,
+          });
+          gsap.to(self.lines, {
+            yPercent: 0,
             stagger: {
               amount: 0.1,
               // from: "end",
@@ -85,10 +92,10 @@ const FullMenu = () => {
       </div>
       <div className="mt-15 flex flex-col items-center">
         <div className="w-fit flex flex-col items-center mb-8">
-          <h1 className="font-extrabold title mt-3 text-[6vw]/[5vw] flex gap-[2vw] items-center">
+          <h1 className="font-extrabold title opacity-0 mt-3 text-[6vw]/[5vw] flex gap-[2vw] items-center">
             CORNER COFFEE <span></span>
           </h1>
-          <h1 className="text-[32vw]/[28vw] title font-extrabold text-ccgreen">
+          <h1 className="text-[32vw]/[28vw] title opacity-0 font-extrabold text-ccgreen">
             MENU
           </h1>
           <div className="px-[3.5vw] w-full">
