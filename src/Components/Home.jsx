@@ -84,7 +84,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="">
+          <div className=" flex justify-center">
             <div className="flex w-[calc(100%-16px)] mb-1 gap-1 mx-1">
               <img
                 src="../imgs/homeImg.jpg"
