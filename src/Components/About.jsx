@@ -138,23 +138,23 @@ const About = () => {
         </p>
       </div>
       <section className="text-thing flex flex-col gap-[1.5vw]">
-        <div className="flex items-center justify-center">
-          <p className="p1">PREMIUM BEANS&nbsp;</p>
+        <div className="flex items-center justify-center gap-[1vw]">
+          <p className="p1">PREMIUM BEANS </p>
           <img src="/imgs/small-beans.png" className="h-[4vw] img1" />
-          <p className="p2">&nbsp;CAREFULLY ROASTED</p>
+          <p className="p2">CAREFULLY ROASTED</p>
         </div>
-        <div className="flex  justify-center items-center">
-          <p className="p2">AN UNFORGETTABLE COFFEE&nbsp;</p>
+        <div className="flex  justify-center items-center gap-[1vw]">
+          <p className="p2">AN UNFORGETTABLE COFFEE</p>
           <img src="/imgs/small-cup.png" className="h-[4vw] img2" />
-          <p className="p3">&nbsp;EXPERIENCE</p>
+          <p className="p3">EXPERIENCE</p>
         </div>
-        <div className="flex  justify-center items-center">
-          <p className="p3">ENJOY EACH SIP&nbsp;</p>
+        <div className="flex  justify-center items-center gap-[1vw]">
+          <p className="p3">ENJOY EACH SIP</p>
           <img src="/imgs/small-drink.png" className="h-[4vw]  img3" />
-          <p className="p4">&nbsp;BEST SAVORED</p>
+          <p className="p4">BEST SAVORED</p>
         </div>
-        <div className="flex  justify-center items-center">
-          <p className="p4">IN OUR COZY CAFE&nbsp;</p>
+        <div className="flex  justify-center items-center gap-[1vw]">
+          <p className="p4">IN OUR COZY CAFE</p>
           <img src="/imgs/small-space.png" className="h-[4vw] img4" />
         </div>
       </section>
