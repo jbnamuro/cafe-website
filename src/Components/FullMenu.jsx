@@ -23,8 +23,8 @@ const FullMenu = () => {
               amount: 0.1,
               // from: "end",
             },
-            duration: 1,
-            ease: "power2.out",
+            duration: 1.5,
+            ease: "power4.out",
           });
         },
       });
