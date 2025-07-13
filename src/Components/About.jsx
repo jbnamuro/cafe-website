@@ -140,7 +140,7 @@ const About = () => {
       <section className="text-thing">
         <div className="flex gap-2 justify-center items-center">
           <p className="p1">PREMIUM BEANS</p>
-          <img src="/imgs/small-beans.png" className="h-[4vw]  img1" />
+          <img src="/imgs/small-beans.png" className="h-[4vw]" />
           <p className="p2">CAREFULLY ROASTED</p>
         </div>
         <div className="flex gap-2 justify-center items-center">
