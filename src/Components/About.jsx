@@ -138,7 +138,7 @@ const About = () => {
         </p>
       </div>
       <section className="text-thing">
-        <div className="flex gap-2 justify-center">
+        <div className="flex gap-2 justify-center h-fit overflow-hidden bg-red-500">
           <p className="p1">PREMIUM BEANS</p>
           <img
             src="/imgs/small-beans.png"
@@ -146,12 +146,12 @@ const About = () => {
           />
           <p className="p2">CAREFULLY ROASTED</p>
         </div>
-        <div className="flex gap-2 justify-center ">
+        <div className="flex gap-2 justify-center h-fit overflow-hidden">
           <p className="p2">AN UNFORGETTABLE COFFEE</p>
           <img src="/imgs/small-cup.png" className="h-[4vw] self-center img2" />
           <p className="p3">EXPERIENCE</p>
         </div>
-        <div className="flex gap-2 justify-center ">
+        <div className="flex gap-2 justify-center h-fit overflow-hidden">
           <p className="p3">ENJOY EACH SIP</p>
           <img
             src="/imgs/small-drink.png"
@@ -159,7 +159,7 @@ const About = () => {
           />
           <p className="p4">BEST SAVORED</p>
         </div>
-        <div className="flex gap-2 justify-center ">
+        <div className="flex gap-2 justify-center h-fit overflow-hidden">
           <p className="p4">IN OUR COZY CAFE</p>
           <img
             src="/imgs/small-space.png"
