@@ -42,15 +42,15 @@ const About = () => {
         duration: 1,
         ease: "power3.out",
       });
-      // tl.to(
-      //   ".img1",
-      //   {
-      //     scale: 1,
-      //     duration: 1,
-      //     ease: "elastic.out(0.4,0.4)",
-      //   },
-      //   "-=0.75"
-      // );
+      tl.to(
+        ".img1",
+        {
+          scale: 1,
+          duration: 1,
+          ease: "elastic.out(0.4,0.4)",
+        },
+        "-=0.75"
+      );
       tl.from(
         pMaps[1].words,
         {
@@ -61,15 +61,15 @@ const About = () => {
         },
         "-=1"
       );
-      // tl.to(
-      //   ".img2",
-      //   {
-      //     scale: 1,
-      //     duration: 1,
-      //     ease: "elastic.out(0.4,0.4)",
-      //   },
-      //   "-=0.75"
-      // );
+      tl.to(
+        ".img2",
+        {
+          scale: 1,
+          duration: 1,
+          ease: "elastic.out(0.4,0.4)",
+        },
+        "-=0.75"
+      );
       tl.from(
         pMaps[2].words,
         {
@@ -138,24 +138,33 @@ const About = () => {
         </p>
       </div>
       <section className="text-thing">
-        <div className="flex gap-2 justify-center items-center">
+        <div className="flex gap-2 justify-center">
           <p className="p1">PREMIUM BEANS</p>
-          <img src="/imgs/small-beans.png" className="h-[4vw]" />
+          <img
+            src="/imgs/small-beans.png"
+            className="h-[4vw]  self-center img1"
+          />
           <p className="p2">CAREFULLY ROASTED</p>
         </div>
-        <div className="flex gap-2 justify-center items-center">
+        <div className="flex gap-2 justify-center ">
           <p className="p2">AN UNFORGETTABLE COFFEE</p>
-          <img src="/imgs/small-cup.png" className="h-[4vw]  img2" />
+          <img src="/imgs/small-cup.png" className="h-[4vw] self-center img2" />
           <p className="p3">EXPERIENCE</p>
         </div>
-        <div className="flex gap-2 justify-center items-center">
+        <div className="flex gap-2 justify-center ">
           <p className="p3">ENJOY EACH SIP</p>
-          <img src="/imgs/small-drink.png" className="h-[4vw]  img3" />
+          <img
+            src="/imgs/small-drink.png"
+            className="h-[4vw] self-center img3"
+          />
           <p className="p4">BEST SAVORED</p>
         </div>
-        <div className="flex gap-2 justify-center items-center">
+        <div className="flex gap-2 justify-center ">
           <p className="p4">IN OUR COZY CAFE</p>
-          <img src="/imgs/small-space.png" className="h-[4vw] img4" />
+          <img
+            src="/imgs/small-space.png"
+            className="h-[4vw] self-center img4"
+          />
         </div>
       </section>
 
