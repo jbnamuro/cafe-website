@@ -42,15 +42,15 @@ const About = () => {
         duration: 1,
         ease: "power3.out",
       });
-      tl.to(
-        ".img1",
-        {
-          scale: 1,
-          duration: 1,
-          ease: "elastic.out(0.4,0.4)",
-        },
-        "-=0.75"
-      );
+      // tl.to(
+      //   ".img1",
+      //   {
+      //     scale: 1,
+      //     duration: 1,
+      //     ease: "elastic.out(0.4,0.4)",
+      //   },
+      //   "-=0.75"
+      // );
       tl.from(
         pMaps[1].words,
         {
@@ -61,15 +61,15 @@ const About = () => {
         },
         "-=1"
       );
-      tl.to(
-        ".img2",
-        {
-          scale: 1,
-          duration: 1,
-          ease: "elastic.out(0.4,0.4)",
-        },
-        "-=0.75"
-      );
+      // tl.to(
+      //   ".img2",
+      //   {
+      //     scale: 1,
+      //     duration: 1,
+      //     ease: "elastic.out(0.4,0.4)",
+      //   },
+      //   "-=0.75"
+      // );
       tl.from(
         pMaps[2].words,
         {
