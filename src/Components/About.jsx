@@ -159,7 +159,7 @@ const About = () => {
         </div>
       </section>
 
-      <div className="flex mt-10 justify-center">
+      <div className="flex mt-[4vw] justify-center">
         <img
           src="/imgs/about/1.jpg"
           className="w-[20%] lg:w-50 h-full unclip img-clip4 object-cover drop-shadow-2xl aspect-2/3 translate-x-[25%] first translate-y-[10%] rounded-2xl z-2"
