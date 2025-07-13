@@ -137,25 +137,25 @@ const About = () => {
           About Us
         </p>
       </div>
-      <section className="text-thing flex flex-col gap-[1vw]">
-        <div className="flex bg-red-500 items-center justify-center gap-2">
-          <p className="p1">PREMIUM BEANS</p>
-          <img src="/imgs/small-beans.png" className="h-[10vw] img1" />
-          <p className="p2">CAREFULLY ROASTED</p>
+      <section className="text-thing flex flex-col gap-[1.5vw]">
+        <div className="flex items-center justify-center">
+          <p className="p1">PREMIUM BEANS&nbsp;</p>
+          <img src="/imgs/small-beans.png" className="h-[4vw] img1" />
+          <p className="p2">&nbsp;CAREFULLY ROASTED</p>
         </div>
-        <div className="flex gap-2 justify-center items-center">
-          <p className="p2">AN UNFORGETTABLE COFFEE</p>
-          <img src="/imgs/small-cup.png" className="h-[3vw] img2" />
-          <p className="p3">EXPERIENCE</p>
+        <div className="flex  justify-center items-center">
+          <p className="p2">AN UNFORGETTABLE COFFEE&nbsp;</p>
+          <img src="/imgs/small-cup.png" className="h-[4vw] img2" />
+          <p className="p3">&nbsp;EXPERIENCE</p>
         </div>
-        <div className="flex gap-2 justify-center items-center">
-          <p className="p3">ENJOY EACH SIP</p>
-          <img src="/imgs/small-drink.png" className="h-[3vw]  img3" />
-          <p className="p4">BEST SAVORED</p>
+        <div className="flex  justify-center items-center">
+          <p className="p3">ENJOY EACH SIP&nbsp;</p>
+          <img src="/imgs/small-drink.png" className="h-[4vw]  img3" />
+          <p className="p4">&nbsp;BEST SAVORED</p>
         </div>
-        <div className="flex gap-2 justify-center items-center">
-          <p className="p4">IN OUR COZY CAFE</p>
-          <img src="/imgs/small-space.png" className="h-[3vw] img4" />
+        <div className="flex  justify-center items-center">
+          <p className="p4">IN OUR COZY CAFE&nbsp;</p>
+          <img src="/imgs/small-space.png" className="h-[4vw] img4" />
         </div>
       </section>
 
