@@ -11,16 +11,16 @@ const About = () => {
   useGSAP(
     () => {
       if (!font) return;
-      gsap.to(".img-clip3", {
-        // delay: 0.7,
-        scale: 1,
-        duration: 1,
-        ease: "elastic.out(0.4,0.4)",
-        scrollTrigger: {
-          trigger: ".img-clip3",
-          start: "top 85%",
-        },
-      });
+      // gsap.to(".img-clip3", {
+      //   // delay: 0.7,
+      //   scale: 1,
+      //   duration: 1,
+      //   ease: "elastic.out(0.4,0.4)",
+      //   scrollTrigger: {
+      //     trigger: ".img-clip3",
+      //     start: "top 85%",
+      //   },
+      // });
 
       const pVers = [".p1", ".p2", ".p3", ".p4"];
       const pMaps = pVers.map((self) =>
@@ -133,9 +133,9 @@ const About = () => {
       className="text-[4vw] leading-none my-15 font-extrabold"
     >
       <div className="flex justify-center w-full">
-        <p className="text-center mb-8 py-1 px-4 img-clip3 lg:text-[40px]/[54px] md:text-[30px]/[47px] border-ccgreen font-bold border w-fit rounded-[4vw]">
+        {/* <p className="text-center mb-8 py-1 px-4 img-clip3 lg:text-[40px]/[54px] md:text-[30px]/[47px] border-ccgreen font-bold border w-fit rounded-[4vw]">
           About Us
-        </p>
+        </p> */}
       </div>
       <section className="text-thing flex flex-col gap-[1.7vw]">
         <div className="flex items-center justify-center gap-[1vw]">
