@@ -162,19 +162,19 @@ const About = () => {
       <div className="flex mt-[4vw] justify-center">
         <img
           src="/imgs/about/1.jpg"
-          className="w-[20%] lg:w-50 h-full unclip img-clip4 object-cover drop-shadow-2xl aspect-2/3 translate-x-[25%] first translate-y-[10%] rounded-2xl z-2"
+          className="w-[20%] lg:w-50 h-full unclip img-clip4 object-cover aspect-2/3 translate-x-[25%] first translate-y-[10%] rounded-2xl z-2"
         />
         <img
           src="/imgs/about/2.jpg"
-          className="w-[20%] object-cover unclip lg:w-50 img-clip4 h-full aspect-2/3 drop-shadow-2xl second  rounded-2xl  z-1"
+          className="w-[20%] object-cover unclip lg:w-50 img-clip4 h-full aspect-2/3 second  rounded-2xl  z-1"
         />
         <img
           src="/imgs/about/3.jpg"
-          className="w-[20%] object-cover unclip lg:w-50 img-clip4 h-full aspect-2/3 drop-shadow-2xl third  rounded-2xl  -translate-x-[10%] translate-y-[5%]"
+          className="w-[20%] object-cover unclip lg:w-50 img-clip4 h-full aspect-2/3 third  rounded-2xl  -translate-x-[10%] translate-y-[5%]"
         />
         <img
           src="/imgs/about/4.jpg"
-          className="w-[20%] object-cover unclip lg:w-50 img-clip4 h-full aspect-2/3 drop-shadow-2xl fourth rounded-2xl -translate-x-[15%] "
+          className="w-[20%] object-cover unclip lg:w-50 img-clip4 h-full aspect-2/3 fourth rounded-2xl -translate-x-[15%] "
         />
       </div>
     </div>
